@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissors Rocks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      <style>
+        .pixls{font-family: 'Press Start 2P',cursive;}
+      </style>
+</head>
+<body>
+    <script src = "script.js"></script>
+     <div class="header">
+        <div class="pixls">Rock Paper Scissors</div>
+        <div class="tag">let's have some rocks roll.</div>
+        <button class="btn" onclick="scrollGame()">Play</button>
+    
+     </div> 
+     <div id="game">
+        <div class="roll">let's roll</div>
+        <div class="hands">
+              <div class="hand">
+                <img src="images/rock.png" alt="rock" class="rock" onclick="startGame('rock')">
+               <p class="p">Rock</p>
+              </div>
+              <div class="hand">
+                <img src="images/scissors.png" alt="scissors" class="scissors" onclick="startGame('scissors')">
+                <p class="p">Scissors</p>
+              </div>
+              <div class="hand">
+                <img src="images/paper.png" alt="paper" class="paper" onclick="startGame('paper')">
+                <p class="p">Paper</p>
+              </div>
+               
+                
+                
+        </div>
+        <div class="result">
+                  <div class="final">
+                        <div class="p">Result</div> 
+                        <div id="result-box" class="hidden"></div> 
+                  </div>
+                    <div class="cmptr">
+                        <div class="p">Computer</div>
+                        <div id="computer-box" class="hidden"></div>
+                  </div>
+        </div>    
+     </div>
+     
+</body>
+</html>
